@@ -1,0 +1,10 @@
+target/
+build/
+dist/
+out/
+
+*.o
+*.rlib
+*.rmeta
+*.d
+*.dSYM/
