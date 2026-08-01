@@ -1,13 +1,13 @@
-// use std::thread;
+use std::thread;
 
-// fn main() {
-//     let list = vec![1, 2, 3];
-//     println!("Before defining closure: {list:?}");
+fn main() {
+    let list = vec![1, 2, 3];
+    println!("Before defining closure: {list:?}");
 
-//     thread::spawn(move || println!("From thread: {list:?}"))
-//         .join()
-//         .unwrap();
-// }
+    thread::spawn(move || println!("From thread: {list:?}"))
+        .join()
+        .unwrap();
+}
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
